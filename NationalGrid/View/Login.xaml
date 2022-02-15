@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NationalGrid.Login"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="0,0,0,0">
+
+            
+            <!--<Entry x:Name = "Email" Placeholder = "Email"
+                HeightRequest = "50"    
+                Keyboard = "Email" />-->
+            
+            <Label Text="Admin" 
+                   FontSize="30" FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="0, 100, 0, 0"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="(authorised personnel only)" 
+                   FontSize="20"
+                   TextColor="Black"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Entry x:Name = "Password" Placeholder = "Enter Password"      
+                            HeightRequest = "50" Text=""     
+                            HorizontalOptions="CenterAndExpand"
+                            WidthRequest="300"
+                            Margin="0,100,0,0"
+                            IsPassword = "True"/>
+
+            <Button x:Name= "loginbtn" Text = "Login " Clicked="Loginbtn_Clicked"   
+             FontAttributes = "Bold" FontSize = "Large" 
+             HorizontalOptions = "EndAndExpand" 
+             HeightRequest="50" WidthRequest="150"
+             Margin="0, 0, 50, 0" BorderRadius="15" TextColor="White"
+             BackgroundColor = "#0C7CBA" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

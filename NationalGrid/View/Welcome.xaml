@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:NationalGrid.API"
+             x:Class="NationalGrid.View.Welcome"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+
+            <ImageButton Source="SettingHeader.png" HorizontalOptions="Center"
+                         x:Name="btnHeader"
+                         BackgroundColor="White"
+                         Margin="10,10,0,0"
+                         Clicked="btnHeader_Clicked"/>
+            
+            
+            <Label Text="" 
+                   x:Name="UserName"
+                   FontSize="30" FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="0, 100, 0, 0"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <!--<Label Text="Thank you - you're connected" 
+                   x:Name="lblMsg"
+                   FontSize="25" FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="0, 0, 0, 0"
+                   VerticalTextAlignment="Center"
+                   HorizontalOptions="CenterAndExpand"/>-->
+
+            <Button x:Name= "btnConnect" 
+             Text = "Tap to Connect Device" Clicked="btnConnect_Clicked"   
+             FontAttributes = "Bold" FontSize = "Large" 
+             HorizontalOptions = "FillAndExpand" 
+             HeightRequest="80" 
+             Margin="10,-250, 10, 10" 
+             BorderRadius="15" TextColor="White"
+             VerticalOptions="CenterAndExpand"
+             IsEnabled="False"
+             BackgroundColor = "#bbbdbf"/>
+
+
+            <!--<local:CustomLoader 
+            x:Name="loader"
+            Grid.Row="0"
+            Source="Loader.png"
+            RotationLenght="2500"
+            Margin="0,-1000,0,-100"    
+                
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand"/>-->
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
